@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_hud_font",
   "bboxMode":0,
-  "bbox_bottom":14,
+  "bbox_bottom":279,
   "bbox_left":0,
   "bbox_right":6,
   "bbox_top":0,

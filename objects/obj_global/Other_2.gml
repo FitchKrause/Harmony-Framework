@@ -7,9 +7,10 @@
 	global.character = CHAR_SONIC;			//Global value for the character
 	
 	//Screen values
-	global.window_width  = 426;				//Window's horizontal size
-	global.window_height = 240;				//Window's vertical size
-	global.window_size   = 2;				//Window size multiplier
+	global.window_width		= 400;				//Window's horizontal size
+	global.window_height	= 224;				//Window's vertical size
+	global.window_scale		= 4;				//Window size multiplier
+	global.window_max_scale	= 6;				//Window size multiplier
 	
 	//keyboard inputs
 	global.up = vk_up;						
@@ -61,10 +62,11 @@
 	global.knux_camera_smooth = false;		//Flag for using smooth ledge climb camera movement
 	
 	//Font setup:
-	global.hud_number = font_add_sprite(spr_hud_numbers, ord("0"), false, 0);
-	global.text_font = font_add_sprite_ext(spr_hud_font, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", false, 0);
-	global.font_small = font_add_sprite_ext(fontDebug, " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ", false, 0);
-	global.text_random = font_add_sprite_ext(spr_font_random, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ.:-!", true, 1);
+	global.hud_number		= font_add_sprite(spr_hud_numbers, ord("0"), false, 0);
+	global.hud_life_number	= font_add_sprite(spr_hud_life_numbers, ord("0"), false, 0);
+	global.text_font		= font_add_sprite_ext(spr_hud_font, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ", false, 0);
+	global.font_small		= font_add_sprite_ext(fontDebug, " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ", false, 0);
+	global.text_random		= font_add_sprite_ext(spr_font_random, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ.:-!", true, 1);
 	
 	//Create controllers:
 	instance_create_depth(0, 0, 0, obj_window);

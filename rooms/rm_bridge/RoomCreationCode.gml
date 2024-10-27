@@ -1,7 +1,7 @@
 	with(obj_level)
 	{
 		//Set stage music and loop points
-		stage_music = bgm_bridge;
+		stage_music = BGM_BRIDGE_1;
 		loop_start = 0;
 		loop_end = 78.607;
 		

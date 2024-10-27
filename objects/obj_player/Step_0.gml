@@ -47,6 +47,9 @@
 	//Handle player's hurt system
 	player_handle_hurt()
 	
+	//animation list
+	player_animation_list();
+	
 	//Update player's animator
 	animator_update(animator);
 	

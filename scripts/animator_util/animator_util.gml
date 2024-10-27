@@ -179,12 +179,9 @@ function animation_get_frame(animator)
 
 function animation_get_speed(animator)
 {
-	return animator.animation_speed;
+	if(animator.animation_use_duration){ return 0; }
 	
-	if(animator.animation_use_duration)
-	{
-		return 0;	
-	}
+	return animator.animation_speed;
 }
 
 function animation_get_frame_count(animator)
@@ -199,12 +196,9 @@ function animation_get_loop_index(animator)
 
 function animation_get_duration(animator)
 {
-	return animator.animation_duration;
+	if(!animator.animation_use_duration){ return 0; }
 	
-	if(!animator.animation_use_duration)
-	{
-		return 0;	
-	}
+	return animator.animation_duration;
 }
 
 function animation_set_speed(animator, animation_speed)
